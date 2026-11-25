@@ -13,8 +13,9 @@ against the agent on held-out instances.
 
 ## Reproducing the paper's numbers
 
-The experiment records are archived separately on Zenodo and published with the
-paper. Download the archive and extract it at the repository root, so that
+The experiment records are archived on Zenodo at
+[https://doi.org/10.5281/zenodo.24537625](https://doi.org/10.5281/zenodo.24537625).
+Download the archive and extract it at the repository root, so that
 `runs/appworld/` sits next to `bench/`, then:
 
     uv sync
