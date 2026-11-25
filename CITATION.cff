@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: If you use this code, please cite the paper it accompanies.
+title: Compiling agent traces into typed workflows (experiment code)
+license: Apache-2.0
+type: software
+version: 1.0.0
+date-released: 2026-11-25
+repository-code: https://github.com/jgcarrasco/agent-trace-compiler-appworld
+authors:
+  - family-names: Garcia-Carrasco
+    given-names: Jorge
+    email: jorge.g@ua.es
+  - family-names: Sanchis
+    given-names: Javier
+  - family-names: Garcia-Ponsoda
+    given-names: Sandra
+  - family-names: Mate
+    given-names: Alejandro
+  - family-names: Trujillo
+    given-names: Juan

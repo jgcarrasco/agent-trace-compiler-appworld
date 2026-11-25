@@ -1,0 +1,182 @@
+{
+  "experiment": "p2",
+  "families": {
+    "29caf6f": {
+      "instances": [
+        {
+          "task_id": "29caf6f_01",
+          "signature": "ea0eaad7ade3a9f603cc9e3201a14ae8cda72d859381565513424222a44c2626",
+          "instruction": "Christopher has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 1
+        },
+        {
+          "task_id": "29caf6f_02",
+          "signature": "826a593d04661dc2311c3479b51e5cc0abd7c4c116006504f33bcbb5a91d75d3",
+          "instruction": "Laura has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 1
+        },
+        {
+          "task_id": "29caf6f_03",
+          "signature": "f245b909a53da1784d45ae9e0bce53faf06ca5996279ea6d47e5297681595829",
+          "instruction": "Leslie has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 1
+        },
+        {
+          "task_id": "29caf6f_04",
+          "signature": "22abb3509c56dfd63c4841485f0c5fa8510c8049f9391011780acb4618da9195",
+          "instruction": "Stacy has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 1
+        },
+        {
+          "task_id": "29caf6f_05",
+          "signature": "72e5d664e22cb807b099d97956f462077f44ca335a04389ae5ca82a1944b52b5",
+          "instruction": "Norman has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 1
+        },
+        {
+          "task_id": "29caf6f_06",
+          "signature": "0ccab807d8418fa42433d7fc84733f7fbe3505832b4f223a72002a2bd75954e0",
+          "instruction": "Allison has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 1
+        },
+        {
+          "task_id": "29caf6f_07",
+          "signature": "b9ae99b71355b29c8cf36a291e2fbb8fcff44b236d150231693830dd1bbc25d7",
+          "instruction": "Angela has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 2
+        },
+        {
+          "task_id": "29caf6f_08",
+          "signature": "07ed5225b13c9e89fb8ddfdead14625b22851d11e75ecf0ec784eccd831628f1",
+          "instruction": "Anthony has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 2
+        },
+        {
+          "task_id": "29caf6f_09",
+          "signature": "41a3e809f9ceef60ad2675383270805f6748ba5ecb4adebfd24f7887d5093bf0",
+          "instruction": "Bradley has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 2
+        },
+        {
+          "task_id": "29caf6f_10",
+          "signature": "33b6650adc52ea68409a268372c96b1570d0044605a714c53163cd3b8f8bd456",
+          "instruction": "Jacob has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 2
+        },
+        {
+          "task_id": "29caf6f_11",
+          "signature": "45bfa6ef9483b0d1da9a8fc9c031be44afa18afb8c5f50680fc25797fcc80d72",
+          "instruction": "Spencer has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 2
+        },
+        {
+          "task_id": "29caf6f_12",
+          "signature": "da08a8da87bc2a5722b88c2423907614f0040c5a8d20992be4b20630c7a12a0b",
+          "instruction": "Allison has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 2
+        },
+        {
+          "task_id": "29caf6f_13",
+          "signature": "98d60e8c6fb2c032990e45fbfb8ad6e56c09810d820d81e6b12020770ab8be65",
+          "instruction": "Bradley has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 3
+        },
+        {
+          "task_id": "29caf6f_14",
+          "signature": "357a770476b857dc564bd25fbfbb134b5924bac3f48fc00159f104a344346821",
+          "instruction": "Dillon has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 3
+        },
+        {
+          "task_id": "29caf6f_15",
+          "signature": "8e1b92c72fe2abfac21e8687a839d823bfed4fd0d86f126d65c379f79783cdaf",
+          "instruction": "Laura has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 3
+        },
+        {
+          "task_id": "29caf6f_16",
+          "signature": "f4efea0c9c04fbe4aa38846328d69ebba8c45379256de74719c43a721b0bbdb9",
+          "instruction": "Stacy has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 3
+        },
+        {
+          "task_id": "29caf6f_17",
+          "signature": "47bdd3f0881f96821f9481c84d93e765b604a8b1a18ba9015498e5ef2389406c",
+          "instruction": "Kathryn has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 3
+        },
+        {
+          "task_id": "29caf6f_18",
+          "signature": "373c11d88121986d9d8ef6a9a7516b904bdace42e802e7ec3ade3199219b72b0",
+          "instruction": "Debra has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 3
+        },
+        {
+          "task_id": "29caf6f_19",
+          "signature": "0e785899c0c0e51d990cfbba22219578160511acd2d1493e4ae8a98c27d31264",
+          "instruction": "Angela has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 4
+        },
+        {
+          "task_id": "29caf6f_20",
+          "signature": "62c5f01f0d2809ff5084afd40e55585a06c4444fcf964f973e527cafb341bd61",
+          "instruction": "Sandra has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 4
+        },
+        {
+          "task_id": "29caf6f_21",
+          "signature": "9ed49f8fc43f738d780537bfd9670272d79899b62b144e3ddb8afc633aeaf6bc",
+          "instruction": "Brenda has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 4
+        },
+        {
+          "task_id": "29caf6f_22",
+          "signature": "3e16f9f4551e6134311d44d3067089ac7efa7d6e761b2520210d6cc164f7a660",
+          "instruction": "Erika has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 4
+        },
+        {
+          "task_id": "29caf6f_23",
+          "signature": "38ba9dd7230343c9ec6b54d540d7d0d8db63c5a8f48f6dcc5e8b258d5feada63",
+          "instruction": "Carl has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 4
+        },
+        {
+          "task_id": "29caf6f_24",
+          "signature": "98edde492ba235212aab70a8a55a1d9d588288029f8d5a03a77a60c619c9d104",
+          "instruction": "Sierra has asked for my movie recommendations via phone text message. Reply to them with a list of comma-separated movie titles from my Simple Note account as per their request.",
+          "seed": 4
+        }
+      ],
+      "dev_pool": [
+        "29caf6f_01",
+        "29caf6f_02",
+        "29caf6f_03",
+        "29caf6f_04",
+        "29caf6f_05",
+        "29caf6f_12",
+        "29caf6f_07",
+        "29caf6f_08",
+        "29caf6f_09",
+        "29caf6f_10",
+        "29caf6f_11",
+        "29caf6f_14",
+        "29caf6f_17",
+        "29caf6f_18",
+        "29caf6f_20",
+        "29caf6f_21",
+        "29caf6f_22",
+        "29caf6f_23",
+        "29caf6f_24"
+      ],
+      "heldout": [
+        "29caf6f_15",
+        "29caf6f_13",
+        "29caf6f_16",
+        "29caf6f_06",
+        "29caf6f_19"
+      ],
+      "instruction_count": 19
+    }
+  }
+}

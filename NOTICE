@@ -1,0 +1,6 @@
+agent-trace-compiler-appworld
+Copyright 2026 Jorge Garcia-Carrasco, Javier Sanchis, Sandra Garcia-Ponsoda, Alejandro Mate, Juan Trujillo
+
+This product includes software developed at the University of Alicante.
+It adapts prompt text from AppWorld (https://github.com/StonyBrookNLP/appworld),
+licensed under the Apache License 2.0.

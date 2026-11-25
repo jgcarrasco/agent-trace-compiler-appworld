@@ -1,0 +1,25 @@
+# Environment
+.venv/
+.env
+
+# Benchmark environment and upstream clone
+/appworld/
+/appworld_data/
+/appworld_gen/
+bench/appworld/.venv/
+
+# Experiment outputs
+/runs/
+/figures/
+
+# Scratch
+/tmp/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/

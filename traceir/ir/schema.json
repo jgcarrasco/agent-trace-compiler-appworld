@@ -1,0 +1,716 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "Band": {
+      "additionalProperties": false,
+      "description": "One band of a DECIDE branch: the first whose maximum covers the value.",
+      "properties": {
+        "max": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Max"
+        },
+        "next": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Next"
+        }
+      },
+      "required": [
+        "max",
+        "next"
+      ],
+      "title": "Band",
+      "type": "object"
+    },
+    "ChoiceQuestion": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "choice",
+          "title": "Type",
+          "type": "string"
+        },
+        "instructions": {
+          "minLength": 1,
+          "title": "Instructions",
+          "type": "string"
+        },
+        "criteria": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "minProperties": 2,
+              "propertyNames": {
+                "minLength": 1
+              },
+              "type": "object"
+            },
+            {
+              "$ref": "#/$defs/Reference"
+            }
+          ],
+          "title": "Criteria"
+        }
+      },
+      "required": [
+        "type",
+        "instructions",
+        "criteria"
+      ],
+      "title": "ChoiceQuestion",
+      "type": "object"
+    },
+    "DecideNode": {
+      "additionalProperties": false,
+      "description": "One bounded question, one typed answer, and the branch that follows it.\n\nThe node routes on its own answer and nothing else: the engine, not the model,\npicks the successor. Policy that compares the answer with other data, or with\nanother answer, stays in an EXECUTE router that follows a plain `next`.",
+      "oneOf": [
+        {
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "routes"
+                ]
+              },
+              {
+                "required": [
+                  "bands"
+                ]
+              }
+            ]
+          },
+          "required": [
+            "next"
+          ]
+        },
+        {
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "next"
+                ]
+              },
+              {
+                "required": [
+                  "bands"
+                ]
+              }
+            ]
+          },
+          "required": [
+            "routes"
+          ]
+        },
+        {
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "next"
+                ]
+              },
+              {
+                "required": [
+                  "routes"
+                ]
+              }
+            ]
+          },
+          "required": [
+            "bands"
+          ]
+        }
+      ],
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "inputs": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/Reference"
+              },
+              {
+                "$ref": "#/$defs/LiteralValue"
+              }
+            ]
+          },
+          "propertyNames": {
+            "minLength": 1
+          },
+          "title": "Inputs",
+          "type": "object"
+        },
+        "write_to": {
+          "anyOf": [
+            {
+              "pattern": "^/state/(?:[^~/]|~[01])*(?:/(?:[^~/]|~[01])*)*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Write To"
+        },
+        "next": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Next"
+        },
+        "routes": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "minProperties": 1,
+          "propertyNames": {
+            "minLength": 1
+          },
+          "title": "Routes",
+          "type": "object"
+        },
+        "type": {
+          "const": "DECIDE",
+          "title": "Type",
+          "type": "string"
+        },
+        "question": {
+          "discriminator": {
+            "mapping": {
+              "choice": "#/$defs/ChoiceQuestion",
+              "noul": "#/$defs/NoulQuestion",
+              "score": "#/$defs/ScoreQuestion"
+            },
+            "propertyName": "type"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/$defs/ChoiceQuestion"
+            },
+            {
+              "$ref": "#/$defs/ScoreQuestion"
+            },
+            {
+              "$ref": "#/$defs/NoulQuestion"
+            }
+          ],
+          "title": "Question"
+        },
+        "on": {
+          "default": "answer",
+          "enum": [
+            "answer",
+            "confidence"
+          ],
+          "title": "On",
+          "type": "string"
+        },
+        "bands": {
+          "items": {
+            "$ref": "#/$defs/Band"
+          },
+          "minItems": 1,
+          "title": "Bands",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "inputs",
+        "type",
+        "question"
+      ],
+      "title": "DecideNode",
+      "type": "object"
+    },
+    "ExecuteNode": {
+      "additionalProperties": false,
+      "oneOf": [
+        {
+          "not": {
+            "required": [
+              "routes"
+            ]
+          },
+          "required": [
+            "next"
+          ]
+        },
+        {
+          "not": {
+            "required": [
+              "next"
+            ]
+          },
+          "required": [
+            "routes"
+          ]
+        }
+      ],
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "inputs": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/Reference"
+              },
+              {
+                "$ref": "#/$defs/LiteralValue"
+              }
+            ]
+          },
+          "propertyNames": {
+            "minLength": 1
+          },
+          "title": "Inputs",
+          "type": "object"
+        },
+        "write_to": {
+          "anyOf": [
+            {
+              "pattern": "^/state/(?:[^~/]|~[01])*(?:/(?:[^~/]|~[01])*)*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Write To"
+        },
+        "next": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Next"
+        },
+        "routes": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "minProperties": 1,
+          "propertyNames": {
+            "minLength": 1
+          },
+          "title": "Routes",
+          "type": "object"
+        },
+        "type": {
+          "const": "EXECUTE",
+          "title": "Type",
+          "type": "string"
+        },
+        "operation": {
+          "minLength": 1,
+          "title": "Operation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "inputs",
+        "type",
+        "operation"
+      ],
+      "title": "ExecuteNode",
+      "type": "object"
+    },
+    "GenerateNode": {
+      "additionalProperties": false,
+      "oneOf": [
+        {
+          "not": {
+            "required": [
+              "routes"
+            ]
+          },
+          "required": [
+            "next"
+          ]
+        },
+        {
+          "not": {
+            "required": [
+              "next"
+            ]
+          },
+          "required": [
+            "routes"
+          ]
+        }
+      ],
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "inputs": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/Reference"
+              },
+              {
+                "$ref": "#/$defs/LiteralValue"
+              }
+            ]
+          },
+          "propertyNames": {
+            "minLength": 1
+          },
+          "title": "Inputs",
+          "type": "object"
+        },
+        "write_to": {
+          "anyOf": [
+            {
+              "pattern": "^/state/(?:[^~/]|~[01])*(?:/(?:[^~/]|~[01])*)*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Write To"
+        },
+        "next": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Next"
+        },
+        "routes": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "minLength": 1,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "minProperties": 1,
+          "propertyNames": {
+            "minLength": 1
+          },
+          "title": "Routes",
+          "type": "object"
+        },
+        "type": {
+          "const": "GENERATE",
+          "title": "Type",
+          "type": "string"
+        },
+        "template": {
+          "minLength": 1,
+          "title": "Template",
+          "type": "string"
+        },
+        "output_schema": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "$ref": "#/$defs/JsonValue"
+              },
+              "type": "object"
+            },
+            {
+              "type": "boolean"
+            }
+          ],
+          "title": "Output Schema"
+        }
+      },
+      "required": [
+        "id",
+        "inputs",
+        "type",
+        "template",
+        "output_schema"
+      ],
+      "title": "GenerateNode",
+      "type": "object"
+    },
+    "JsonValue": {},
+    "LiteralValue": {
+      "additionalProperties": false,
+      "properties": {
+        "literal": {
+          "$ref": "#/$defs/JsonValue"
+        }
+      },
+      "required": [
+        "literal"
+      ],
+      "title": "LiteralValue",
+      "type": "object"
+    },
+    "NoulCriteria": {
+      "additionalProperties": false,
+      "properties": {
+        "true": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "True"
+        },
+        "false": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "False"
+        }
+      },
+      "title": "NoulCriteria",
+      "type": "object"
+    },
+    "NoulQuestion": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "noul",
+          "title": "Type",
+          "type": "string"
+        },
+        "instructions": {
+          "minLength": 1,
+          "title": "Instructions",
+          "type": "string"
+        },
+        "criteria": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/NoulCriteria"
+            },
+            {
+              "$ref": "#/$defs/Reference"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Criteria"
+        }
+      },
+      "required": [
+        "type",
+        "instructions"
+      ],
+      "title": "NoulQuestion",
+      "type": "object"
+    },
+    "Reference": {
+      "additionalProperties": false,
+      "properties": {
+        "ref": {
+          "pattern": "^/(?:input|state)(?:/(?:[^~/]|~[01])*)*$",
+          "title": "Ref",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ref"
+      ],
+      "title": "Reference",
+      "type": "object"
+    },
+    "ScoreQuestion": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "score",
+          "title": "Type",
+          "type": "string"
+        },
+        "instructions": {
+          "minLength": 1,
+          "title": "Instructions",
+          "type": "string"
+        },
+        "criteria": {
+          "anyOf": [
+            {
+              "items": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "minItems": 2,
+              "type": "array"
+            },
+            {
+              "$ref": "#/$defs/Reference"
+            }
+          ],
+          "title": "Criteria"
+        }
+      },
+      "required": [
+        "type",
+        "instructions",
+        "criteria"
+      ],
+      "title": "ScoreQuestion",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "entrypoint": {
+      "minLength": 1,
+      "title": "Entrypoint",
+      "type": "string"
+    },
+    "input_schema": {
+      "anyOf": [
+        {
+          "additionalProperties": {
+            "$ref": "#/$defs/JsonValue"
+          },
+          "type": "object"
+        },
+        {
+          "type": "boolean"
+        }
+      ],
+      "title": "Input Schema"
+    },
+    "output_schema": {
+      "anyOf": [
+        {
+          "additionalProperties": {
+            "$ref": "#/$defs/JsonValue"
+          },
+          "type": "object"
+        },
+        {
+          "type": "boolean"
+        }
+      ],
+      "title": "Output Schema"
+    },
+    "nodes": {
+      "items": {
+        "discriminator": {
+          "mapping": {
+            "DECIDE": "#/$defs/DecideNode",
+            "EXECUTE": "#/$defs/ExecuteNode",
+            "GENERATE": "#/$defs/GenerateNode"
+          },
+          "propertyName": "type"
+        },
+        "oneOf": [
+          {
+            "$ref": "#/$defs/ExecuteNode"
+          },
+          {
+            "$ref": "#/$defs/DecideNode"
+          },
+          {
+            "$ref": "#/$defs/GenerateNode"
+          }
+        ]
+      },
+      "minItems": 1,
+      "title": "Nodes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "entrypoint",
+    "input_schema",
+    "output_schema",
+    "nodes"
+  ],
+  "title": "Workflow",
+  "type": "object"
+}

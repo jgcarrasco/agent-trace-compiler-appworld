@@ -1,0 +1,16 @@
+[project]
+name = "traceir"
+version = "1.0.0"
+description = "Compiling successful agent traces into an IR graph of EXECUTE / DECIDE / GENERATE nodes"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "pydantic>=2.10,<3",
+    "jsonschema>=4.18,<5",
+    "httpx>=0.27,<1",
+]
+
+# The library runs from the repository root (`python -m traceir.engine`); nothing
+# is installed as a console command yet. It imports no benchmark: the tests in
+# tests/test_traceir/test_package_boundaries.py enforce that.
+[tool.uv]
+package = false

@@ -1,0 +1,564 @@
+{
+  "experiment": "p1",
+  "families": {
+    "07b42fd": {
+      "instances": [
+        {
+          "task_id": "07b42fd_01",
+          "signature": "9527ce04ef936ec7376254bb7a9694cf9c8459d1c3dafe4bf821a5d3bc7fe10a",
+          "instruction": "Follow all the classical artists on Spotify that have at least 22 followers.",
+          "seed": 1
+        },
+        {
+          "task_id": "07b42fd_02",
+          "signature": "74b43ddde35452de18ff421047b63b5a3b4b70a8e63405b810e6bdf09351f95d",
+          "instruction": "Follow all the edm artists on Spotify that have at least 23 followers.",
+          "seed": 1
+        },
+        {
+          "task_id": "07b42fd_03",
+          "signature": "13140b00e2896cc5927c0c1024db12210facd9866f83790a48f24c81d364e42f",
+          "instruction": "Follow all the reggae artists on Spotify that have at least 21 followers.",
+          "seed": 1
+        },
+        {
+          "task_id": "07b42fd_04",
+          "signature": "721c625ad44ef6deaf4d5915e64513a51943a9b36b49bead34b70bef13d25f50",
+          "instruction": "Follow all the country artists on Spotify that have at least 19 followers.",
+          "seed": 1
+        },
+        {
+          "task_id": "07b42fd_05",
+          "signature": "d47dd0cca5a41883718d0be0694b50182a1cf66d22ad7387156d60a0a12c2eb5",
+          "instruction": "Follow all the indie artists on Spotify that have at least 20 followers.",
+          "seed": 1
+        },
+        {
+          "task_id": "07b42fd_06",
+          "signature": "283e054b397ddd9bf7de9a3cb33f26ccb13ae35e936332412ddccf5d3108e91a",
+          "instruction": "Follow all the r&b artists on Spotify that have at least 22 followers.",
+          "seed": 2
+        },
+        {
+          "task_id": "07b42fd_07",
+          "signature": "e211bd33dea1c627df2585af4ae7c72f259e3f9dcb42cd92a12d1573774a5235",
+          "instruction": "Follow all the reggae artists on Spotify that have at least 21 followers.",
+          "seed": 2
+        },
+        {
+          "task_id": "07b42fd_08",
+          "signature": "ef885f32c0792f2c2a2291ef0f2b90fc148a7807bd212b34e71dcc7bf004e1c4",
+          "instruction": "Follow all the edm artists on Spotify that have at least 23 followers.",
+          "seed": 2
+        },
+        {
+          "task_id": "07b42fd_09",
+          "signature": "4b279b8a670d635cc6c7e0239ca113a6319308af5b92831ce67867f3acc0d320",
+          "instruction": "Follow all the country artists on Spotify that have at least 20 followers.",
+          "seed": 2
+        },
+        {
+          "task_id": "07b42fd_10",
+          "signature": "0c012823ed2026d0ce5e8d95d5109e28c461e5fe4b928398225093e87291f1be",
+          "instruction": "Follow all the edm artists on Spotify that have at least 22 followers.",
+          "seed": 3
+        },
+        {
+          "task_id": "07b42fd_11",
+          "signature": "b616101cdde2850e1cfdcd80253e8e9005cc421103accada24761a612235f28e",
+          "instruction": "Follow all the reggae artists on Spotify that have at least 21 followers.",
+          "seed": 3
+        },
+        {
+          "task_id": "07b42fd_12",
+          "signature": "8300f6c24849219b44fc310ad759642838381446ab776974f71695f4caa247b2",
+          "instruction": "Follow all the country artists on Spotify that have at least 20 followers.",
+          "seed": 3
+        },
+        {
+          "task_id": "07b42fd_13",
+          "signature": "42752fcc247ba77b7b16e135d4a6bda49af88129284994e405c8de29e3b4fe58",
+          "instruction": "Follow all the edm artists on Spotify that have at least 23 followers.",
+          "seed": 4
+        },
+        {
+          "task_id": "07b42fd_14",
+          "signature": "ba759a58a2c50d236df85ec0b26c491c56dcd26bdf5d86dd9fc3f45dd5709d41",
+          "instruction": "Follow all the classical artists on Spotify that have at least 22 followers.",
+          "seed": 4
+        },
+        {
+          "task_id": "07b42fd_15",
+          "signature": "0358cebb7aa7b6b1f36e9670401c92b821dfd269f1321b9adb3640fa43b23dac",
+          "instruction": "Follow all the reggae artists on Spotify that have at least 21 followers.",
+          "seed": 4
+        },
+        {
+          "task_id": "07b42fd_16",
+          "signature": "05982d3223337bbab50f699f3b207693286f1f0470a5e54b6938e3d895e38e55",
+          "instruction": "Follow all the country artists on Spotify that have at least 20 followers.",
+          "seed": 4
+        },
+        {
+          "task_id": "07b42fd_17",
+          "signature": "9055d2551f995875f084b63cb541816b2c9e83542d63da0c627066a745c60b82",
+          "instruction": "Follow all the classical artists on Spotify that have at least 22 followers.",
+          "seed": 5
+        },
+        {
+          "task_id": "07b42fd_18",
+          "signature": "7a4073ef8c87d9951cc94f16abab38e047046886534538432af48d2b82fa61f9",
+          "instruction": "Follow all the edm artists on Spotify that have at least 23 followers.",
+          "seed": 5
+        },
+        {
+          "task_id": "07b42fd_19",
+          "signature": "6401b6b60780925b53e76c75bffa8d60e7945fd088aa310d3da319abaaa4f0f5",
+          "instruction": "Follow all the reggae artists on Spotify that have at least 21 followers.",
+          "seed": 5
+        },
+        {
+          "task_id": "07b42fd_20",
+          "signature": "9cf380790b82230689dcd5a77f5104ade28ad1cde1900c4f83de3a88023277ee",
+          "instruction": "Follow all the country artists on Spotify that have at least 20 followers.",
+          "seed": 5
+        },
+        {
+          "task_id": "07b42fd_21",
+          "signature": "f4d5b80bde7be78b24099e524ceecce5f1bf8f46bd8c06a06260cafe1dc93623",
+          "instruction": "Follow all the r&b artists on Spotify that have at least 22 followers.",
+          "seed": 6
+        },
+        {
+          "task_id": "07b42fd_22",
+          "signature": "885cabe87fa29d032a79c158cfb6c8eb7bb7c7f2e5bdcce0d5b17e516a3cafaf",
+          "instruction": "Follow all the edm artists on Spotify that have at least 23 followers.",
+          "seed": 6
+        },
+        {
+          "task_id": "07b42fd_23",
+          "signature": "1d0b4d58e3cb6fe3f7fe610d46f7d5fbbccc3fd6e0ca5953f85cc75ea6b0a0cb",
+          "instruction": "Follow all the reggae artists on Spotify that have at least 21 followers.",
+          "seed": 6
+        },
+        {
+          "task_id": "07b42fd_24",
+          "signature": "91294845f019fc5227d6db7ec628c4b64b1845f679d1336c6b73264d04647b99",
+          "instruction": "Follow all the country artists on Spotify that have at least 19 followers.",
+          "seed": 6
+        },
+        {
+          "task_id": "07b42fd_25",
+          "signature": "3b501b9a11357eeef57dbdaa690dd3ae6185b73034680229757fd16e31b13d88",
+          "instruction": "Follow all the indie artists on Spotify that have at least 20 followers.",
+          "seed": 6
+        }
+      ],
+      "dev_pool": [
+        "07b42fd_01",
+        "07b42fd_22",
+        "07b42fd_19",
+        "07b42fd_24",
+        "07b42fd_05",
+        "07b42fd_21",
+        "07b42fd_20",
+        "07b42fd_10",
+        "07b42fd_02",
+        "07b42fd_15",
+        "07b42fd_12",
+        "07b42fd_04",
+        "07b42fd_14",
+        "07b42fd_11",
+        "07b42fd_13"
+      ],
+      "heldout": [
+        "07b42fd_17",
+        "07b42fd_06",
+        "07b42fd_09",
+        "07b42fd_16",
+        "07b42fd_03",
+        "07b42fd_18",
+        "07b42fd_08",
+        "07b42fd_25",
+        "07b42fd_23",
+        "07b42fd_07"
+      ],
+      "instruction_count": 8
+    },
+    "302c169": {
+      "instances": [
+        {
+          "task_id": "302c169_01",
+          "signature": "e8961843003a37bb2213ab39828ddc35c295da79ee41adb1d184e082072e1a8b",
+          "instruction": "I am going on a vacation. Move my go-to-sleep phone alarm to 1 hour later and disable the rest.",
+          "seed": 1
+        },
+        {
+          "task_id": "302c169_02",
+          "signature": "36987874dc634f66815ca5e3643e7f282f98589e274e60002306af3cfbdd9bd7",
+          "instruction": "I am going on a vacation. Move my wake-up phone alarm to 40 minutes earlier and disable the rest.",
+          "seed": 1
+        },
+        {
+          "task_id": "302c169_03",
+          "signature": "a21443edd2afe03e63a04004dc86abd3e119cb545d2795013be750534f0d438a",
+          "instruction": "I am going on a vacation. Move my go-to-sleep phone alarm to 20 minutes later and disable the rest.",
+          "seed": 1
+        },
+        {
+          "task_id": "302c169_04",
+          "signature": "685983c7cc3e73cb8e1dbf068bfd4a689a113652218284450e273a32166a8b80",
+          "instruction": "I am going on a vacation. Move my wake-up phone alarm to 1 hour earlier and disable the rest.",
+          "seed": 1
+        },
+        {
+          "task_id": "302c169_05",
+          "signature": "1b28001acdc7cb9bb4d0c81899f841a82b1b9f83d77d851341a4e8f8e62f75f6",
+          "instruction": "I am going on a vacation. Move my go-to-sleep phone alarm to 1.5 hours later and disable the rest.",
+          "seed": 1
+        },
+        {
+          "task_id": "302c169_06",
+          "signature": "48b0dfdce00df8a977fca673200b298151698c0930b74544cf42d2b923ce3898",
+          "instruction": "I am going on a vacation. Move my wake-up phone alarm to 20 minutes earlier and disable the rest.",
+          "seed": 1
+        },
+        {
+          "task_id": "302c169_07",
+          "signature": "a7f3203f88110278607b461e64fb9ee536661089601b274865d30b10adb48ff0",
+          "instruction": "I am going on a vacation. Move my go-to-sleep phone alarm to 1 hour later and disable the rest.",
+          "seed": 2
+        },
+        {
+          "task_id": "302c169_08",
+          "signature": "00b1b06cd3ab46c259f9ce1771d2bb3910aeb88ed430f01142b3b09f23c7b976",
+          "instruction": "I am going on a vacation. Move my wake-up phone alarm to 40 minutes earlier and disable the rest.",
+          "seed": 2
+        },
+        {
+          "task_id": "302c169_09",
+          "signature": "0db20ce5704f12d8320599efe9668d721167af388041ef5b83a1a25666d7f2dd",
+          "instruction": "I am going on a vacation. Move my go-to-sleep phone alarm to 20 minutes later and disable the rest.",
+          "seed": 2
+        },
+        {
+          "task_id": "302c169_10",
+          "signature": "d7019aff380af1d6af317c64bdc553800b5b16be56db1d9b14892e9f3c3ea2b6",
+          "instruction": "I am going on a vacation. Move my wake-up phone alarm to 1 hour earlier and disable the rest.",
+          "seed": 2
+        },
+        {
+          "task_id": "302c169_11",
+          "signature": "7c3dc967ef877d33e4793b4b30b2ad1e1dbd929cfa84837366da1b58b9cd83cf",
+          "instruction": "I am going on a vacation. Move my go-to-sleep phone alarm to 1.5 hours later and disable the rest.",
+          "seed": 2
+        },
+        {
+          "task_id": "302c169_12",
+          "signature": "6e16aaf26e14abfb8bfc0df6be1098346c102e94cb17ac6f7db122ca7a3983e8",
+          "instruction": "I am going on a vacation. Move my wake-up phone alarm to 20 minutes earlier and disable the rest.",
+          "seed": 2
+        },
+        {
+          "task_id": "302c169_13",
+          "signature": "480369f1bdee87c4588b379d5670034a777717dab70424005f684565b68e3935",
+          "instruction": "I am going on a vacation. Move my go-to-sleep phone alarm to 1 hour later and disable the rest.",
+          "seed": 3
+        },
+        {
+          "task_id": "302c169_14",
+          "signature": "43acdfbcd76f63d160f04f2e9fc0601b9bc83dbafc774374841ba5b357779ccd",
+          "instruction": "I am going on a vacation. Move my wake-up phone alarm to 40 minutes earlier and disable the rest.",
+          "seed": 3
+        },
+        {
+          "task_id": "302c169_15",
+          "signature": "bf739d4c2cdf022af822d04c6f1a98d24d1bddb75fe1344dec80c84883f66e9a",
+          "instruction": "I am going on a vacation. Move my go-to-sleep phone alarm to 20 minutes later and disable the rest.",
+          "seed": 3
+        },
+        {
+          "task_id": "302c169_16",
+          "signature": "ea28842070cdfac8738ed872808116262202aae5f142d28d6ccb23930328af23",
+          "instruction": "I am going on a vacation. Move my wake-up phone alarm to 1 hour earlier and disable the rest.",
+          "seed": 3
+        },
+        {
+          "task_id": "302c169_17",
+          "signature": "84f750a80c800d9049659fd444b6eda2ad02e557bd8ed2fa753ce24e0c8bad35",
+          "instruction": "I am going on a vacation. Move my go-to-sleep phone alarm to 1.5 hours later and disable the rest.",
+          "seed": 3
+        },
+        {
+          "task_id": "302c169_18",
+          "signature": "30193bda2ad9290bd3106c53439f4b545b27132de9a9957d512156c5317a4bd1",
+          "instruction": "I am going on a vacation. Move my wake-up phone alarm to 20 minutes earlier and disable the rest.",
+          "seed": 3
+        },
+        {
+          "task_id": "302c169_19",
+          "signature": "73f2c76066b19e6b33c5ec3b8a97d190a13fb2dcbd586906ae139daea450f45f",
+          "instruction": "I am going on a vacation. Move my go-to-sleep phone alarm to 1 hour later and disable the rest.",
+          "seed": 4
+        },
+        {
+          "task_id": "302c169_20",
+          "signature": "0f9771bc425626218d46ac4f8ec74c92886fd2be0eabda62b6321c30713f31b0",
+          "instruction": "I am going on a vacation. Move my wake-up phone alarm to 40 minutes earlier and disable the rest.",
+          "seed": 4
+        },
+        {
+          "task_id": "302c169_21",
+          "signature": "6092ecd5ed937f6ab49f300a580fa3716cbdde4cb737440b8fff1dc57cc88ac1",
+          "instruction": "I am going on a vacation. Move my go-to-sleep phone alarm to 20 minutes later and disable the rest.",
+          "seed": 4
+        },
+        {
+          "task_id": "302c169_22",
+          "signature": "e66e123afbcef09a7e0da15f07a98145249812ae27a00183b08c8ddb25ada981",
+          "instruction": "I am going on a vacation. Move my wake-up phone alarm to 1 hour earlier and disable the rest.",
+          "seed": 4
+        },
+        {
+          "task_id": "302c169_23",
+          "signature": "77aea30080dd6d09d198d588251d9d4ad69ba7472ab49998fcb955781bf66b55",
+          "instruction": "I am going on a vacation. Move my go-to-sleep phone alarm to 1.5 hours later and disable the rest.",
+          "seed": 4
+        },
+        {
+          "task_id": "302c169_24",
+          "signature": "2987d3a61d7567845cf6830f392dbb898546900a2d2e39511f91e8312b1f0ef7",
+          "instruction": "I am going on a vacation. Move my wake-up phone alarm to 20 minutes earlier and disable the rest.",
+          "seed": 4
+        }
+      ],
+      "dev_pool": [
+        "302c169_13",
+        "302c169_02",
+        "302c169_03",
+        "302c169_10",
+        "302c169_17",
+        "302c169_24",
+        "302c169_14",
+        "302c169_22",
+        "302c169_11",
+        "302c169_16",
+        "302c169_07",
+        "302c169_04",
+        "302c169_20",
+        "302c169_06"
+      ],
+      "heldout": [
+        "302c169_01",
+        "302c169_23",
+        "302c169_18",
+        "302c169_12",
+        "302c169_15",
+        "302c169_08",
+        "302c169_19",
+        "302c169_05",
+        "302c169_21",
+        "302c169_09"
+      ],
+      "instruction_count": 6
+    },
+    "ce359b5": {
+      "instances": [
+        {
+          "task_id": "ce359b5_01",
+          "signature": "bde4a9b47dec73a703496501cbafc7b0f942237cb6f1d7a2cbd3609d41da41e7",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released before 2021 year.",
+          "seed": 1
+        },
+        {
+          "task_id": "ce359b5_02",
+          "signature": "ebc0601646865a7609e43e09009d10721dbf5730804378aa609e4e4991bc6897",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released after 2021 year.",
+          "seed": 1
+        },
+        {
+          "task_id": "ce359b5_03",
+          "signature": "07cb81ca5d488e4dce6dbdd47a11887046e4d9b5ccf5a7290a2158c6b2243a92",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released in or before 2021 year.",
+          "seed": 1
+        },
+        {
+          "task_id": "ce359b5_04",
+          "signature": "edc3b83d25e83b68e6d268fdd1affcc1eac607e21ec8c246bbf247602b28856b",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released in or after 2021 year.",
+          "seed": 1
+        },
+        {
+          "task_id": "ce359b5_05",
+          "signature": "319ea15f4bcb3c9f2078258d37c144fdd55bb15b4f3daa741e49c42452b65631",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released before 2021 year.",
+          "seed": 1
+        },
+        {
+          "task_id": "ce359b5_06",
+          "signature": "30027f2bd34012f3c34d204968931e2aa8f0910076f6e9344d7787e7bac59ac1",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released after 2021 year.",
+          "seed": 1
+        },
+        {
+          "task_id": "ce359b5_07",
+          "signature": "c5435321953dac6d5300a0199fa7e4db0d9656817d4b4209e53ba70a62950aee",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released before 2021 year.",
+          "seed": 2
+        },
+        {
+          "task_id": "ce359b5_08",
+          "signature": "dc8dd0ce571d7734b1d682d28e5bbc4cc59f9e809653de548cb771f73d435219",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released in or after 2020 year.",
+          "seed": 2
+        },
+        {
+          "task_id": "ce359b5_09",
+          "signature": "35dcd58cd1151402e3310510fcbb7f28ad1b246da2caf63961087cc246ed25b5",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released before 2021 year.",
+          "seed": 2
+        },
+        {
+          "task_id": "ce359b5_10",
+          "signature": "896ef8ce403dae301436cb30c56197b443a3e87d5821343239ee191047795167",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released after 2021 year.",
+          "seed": 2
+        },
+        {
+          "task_id": "ce359b5_11",
+          "signature": "1e06bc99b487c02a9a8e5aaaa53bbf1987f8284cfb6570cdde8a15df946d2e77",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released before 2021 year.",
+          "seed": 3
+        },
+        {
+          "task_id": "ce359b5_12",
+          "signature": "f73503aa562b047c44ea3b31c4236a475be401647705e9aef094438886eb55a8",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released in or before 2021 year.",
+          "seed": 3
+        },
+        {
+          "task_id": "ce359b5_13",
+          "signature": "afb9b12a6b9f6bb1e117d39a02cfecf41415b9ecd201a689f13d7a055f5a1b98",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released in or after 2021 year.",
+          "seed": 3
+        },
+        {
+          "task_id": "ce359b5_14",
+          "signature": "9bd4071894ee951bd5b27c4fa2886b3f703598c3aaaae0a090991aa65d53baba",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released before 2021 year.",
+          "seed": 3
+        },
+        {
+          "task_id": "ce359b5_15",
+          "signature": "414e8ae01245276da70e75aa5aa4ff08cc18ded0f214bf1702dd87f035703c84",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released after 2021 year.",
+          "seed": 3
+        },
+        {
+          "task_id": "ce359b5_16",
+          "signature": "0b250895ba610828fda5281c8b8680e44f991c7780091e6f692516bdee6ed54a",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released after 2020 year.",
+          "seed": 4
+        },
+        {
+          "task_id": "ce359b5_17",
+          "signature": "7935bdd7797d6a6945dad04d8ca5a7f83c9791c2080d66df60a26ae59b214be3",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released in or before 2021 year.",
+          "seed": 4
+        },
+        {
+          "task_id": "ce359b5_18",
+          "signature": "ad3320975fbd0888319ad83bb28350ea76ac36b571360db5075c1f6132e5bbe6",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released in or after 2021 year.",
+          "seed": 4
+        },
+        {
+          "task_id": "ce359b5_19",
+          "signature": "94a8f31840de7d2713e5c78b47773d4df3682f5d85e97e6f6cc0a9a0fcc54cef",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released after 2021 year.",
+          "seed": 4
+        },
+        {
+          "task_id": "ce359b5_20",
+          "signature": "3bcccfbe18c7270a589d3b1838f7cd2d7e607010a99525a3d8147b670b8b35c4",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released in or before 2021 year.",
+          "seed": 5
+        },
+        {
+          "task_id": "ce359b5_21",
+          "signature": "989ac5d181af99c82da7a8fe53955d3ec4910e95a7c84b67320c59ea7834461d",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released in or after 2021 year.",
+          "seed": 5
+        },
+        {
+          "task_id": "ce359b5_22",
+          "signature": "1a5de77b0e92dfbfa4cb4990f6b5fd5c5370b9d2c1acde62363d381792ef28d0",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released before 2021 year.",
+          "seed": 5
+        },
+        {
+          "task_id": "ce359b5_23",
+          "signature": "fa371a21ec59c151ba6546cf91f6ff14fe6c6f749b5eb07a3eeed6c2634f4710",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released after 2021 year.",
+          "seed": 5
+        },
+        {
+          "task_id": "ce359b5_24",
+          "signature": "8dbfe94a2729695a62d813b7e11771395f55eb4628ee3efe98c9fa6f564e0d1c",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released after 2021 year.",
+          "seed": 6
+        },
+        {
+          "task_id": "ce359b5_25",
+          "signature": "61837750cc7b18f1d1bf9c41fb0091392baeb70980979f9eb8f1e540a1ca8c10",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released in or before 2021 year.",
+          "seed": 6
+        },
+        {
+          "task_id": "ce359b5_26",
+          "signature": "10893ba88e5b6e4a54e6a42b46045830f7012cb1b4980cfbb324a3779bb515f6",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released before 2021 year.",
+          "seed": 6
+        },
+        {
+          "task_id": "ce359b5_27",
+          "signature": "0b27833293d4fdcb070334846148a5eeba5a956f8c9ca50173fc23e81b30c979",
+          "instruction": "Remove all songs from my Spotify song library and playlists that were released after 2021 year.",
+          "seed": 6
+        }
+      ],
+      "dev_pool": [
+        "ce359b5_11",
+        "ce359b5_06",
+        "ce359b5_17",
+        "ce359b5_21",
+        "ce359b5_08",
+        "ce359b5_16",
+        "ce359b5_02",
+        "ce359b5_26",
+        "ce359b5_15",
+        "ce359b5_24",
+        "ce359b5_03",
+        "ce359b5_07",
+        "ce359b5_01",
+        "ce359b5_23",
+        "ce359b5_09",
+        "ce359b5_18",
+        "ce359b5_25"
+      ],
+      "heldout": [
+        "ce359b5_05",
+        "ce359b5_22",
+        "ce359b5_27",
+        "ce359b5_04",
+        "ce359b5_13",
+        "ce359b5_20",
+        "ce359b5_12",
+        "ce359b5_10",
+        "ce359b5_14",
+        "ce359b5_19"
+      ],
+      "instruction_count": 6
+    }
+  }
+}

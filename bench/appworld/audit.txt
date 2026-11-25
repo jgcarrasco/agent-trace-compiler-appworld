@@ -1,0 +1,143 @@
+records                                       runs/appworld
+
+== instances
+07b42fd  generated / dev / held out           25 / 15 / 10, 8 instructions
+302c169  generated / dev / held out           24 / 14 / 10, 6 instructions
+ce359b5  generated / dev / held out           27 / 17 / 10, 6 instructions
+total generated / held out                    76 / 30
+every held-out instruction appears in a trace yes 
+traced and held-out instances are disjoint    yes 
+
+== traces (the compiler's input)
+07b42fd  traces / solved                      15 / 15
+302c169  traces / solved                      14 / 14
+ce359b5  traces / solved                      17 / 17
+traces ending in the completion call          46 of 46
+calls per trace, min / median / max           6 / 11 / 18
+wall clock per trace, median s                41
+total wall clock, min                         33
+trace cost, $                                 0.138
+every trace solved its task                   yes (0 failures)
+
+== compiles (the workflow's input-output contract)
+07b42fd  newest compile, $ / min              0.070 / 4.8
+07b42fd  nodes  EXECUTE / DECIDE / GENERATE   20  19 / 1 / 0
+07b42fd  distinct operations                  18
+302c169  newest compile, $ / min              0.041 / 3.3
+302c169  nodes  EXECUTE / DECIDE / GENERATE   16  14 / 2 / 0
+302c169  distinct operations                  14
+ce359b5  newest compile, $ / min              0.050 / 3.6
+ce359b5  nodes  EXECUTE / DECIDE / GENERATE   13  13 / 0 / 0
+ce359b5  distinct operations                  13
+
+== main results (30 held out)
+07b42fd IR  solved / state / tests            10/10  10  50/50
+07b42fd IR  $/run, s/run, calls               0.000023  0.5  1.0
+07b42fd agent  solved / state / tests         10/10  10  50/50
+07b42fd agent  $/run, s/run, calls            0.002247  46.0  9.3
+302c169 IR  solved / state / tests            10/10  10  80/80
+302c169 IR  $/run, s/run, calls               0.000034  0.6  2.0
+302c169 agent  solved / state / tests         9/10  10  79/80
+302c169 agent  $/run, s/run, calls            0.001573  37.8  7.7
+ce359b5 IR  solved / state / tests            10/10  10  80/80
+ce359b5 IR  $/run, s/run, calls               0.000000  0.6  0.0
+ce359b5 agent  solved / state / tests         10/10  10  80/80
+ce359b5 agent  $/run, s/run, calls            0.004111  62.4  13.3
+pooled ir  solved / tests                     30/30  210/210
+pooled ir  $/run, s/run, calls                0.000019  0.6  1.0
+pooled ir  $/run uncached                     0.000019
+pooled ir  tokens in / cached / out           452  0  57
+pooled agent  solved / tests                  29/30  209/210
+pooled agent  $/run, s/run, calls             0.002644  45.6  10.1
+pooled agent  $/run uncached                  0.029585
+pooled agent  tokens in / cached / out        90,021  79,258  2,149
+agent's failing run: 302c169_05  tests / state7/8  True
+07b42fd compile / traces, $                   0.0703 / 0.0401
+07b42fd break-even, executions                31.6
+07b42fd break-even with traces, executions    49.6
+302c169 compile / traces, $                   0.0406 / 0.0221
+302c169 break-even, executions                26.4
+302c169 break-even with traces, executions    40.7
+ce359b5 compile / traces, $                   0.0498 / 0.0759
+ce359b5 break-even, executions                12.1
+ce359b5 break-even with traces, executions    30.6
+pooled agent  cache read share of input       0.880
+pooled IR  cache read share of input          0.000
+IR is cheaper than the agent by (mean)        139x
+IR is cheaper than the agent by (median)      98.5x
+IR is faster than the agent by                76x
+IR uses fewer input tokens by                 199x
+
+== ladder (same 30 held out)
+all-generate  solved / tests                  30/30  210/210
+all-generate  $/run, $ uncached, tok in       0.008056  0.038451  115,076
+all-generate  s/run, calls                    16.4  1.0
+all-generate  tokens in / cached / out        115,076 / 103,386 / 3,274
+all-generate  cache read share of input       0.898
+agent  solved / tests                         29/30  209/210
+agent  $/run, $ uncached, tok in              0.002644  0.029585  90,021
+agent  s/run, calls                           45.6  10.1
+agent  tokens in / cached / out               90,021 / 79,258 / 2,149
+agent  cache read share of input              0.880
+IR + chat decisions  solved / tests           30/30  210/210
+IR + chat decisions  $/run, $ uncached, tok in0.000132  0.000143  255
+IR + chat decisions  s/run, calls             1.5  1.0
+IR + chat decisions  tokens in / cached / out 255 / 38 / 56
+IR + chat decisions  cache read share of input0.151
+IR  solved / tests                            30/30  210/210
+IR  $/run, $ uncached, tok in                 0.000019  0.000019  452
+IR  s/run, calls                              0.6  1.0
+IR  tokens in / cached / out                  452 / 0 / 57
+IR  cache read share of input                 0.000
+all-generate over the agent, $                3.05x
+all-generate over IR, $                       425x
+IR + chat over IR, $                          6.95x
+agent over IR + chat, $                       20x
+agent over all-generate, $                    0.328x
+all-generate  paid / uncached (cache factor)  4.8x
+agent  paid / uncached (cache factor)         11.2x
+IR + chat decisions  paid / uncached (cache factor)1.1x
+IR  paid / uncached (cache factor)            1.0x
+
+== coverage: held-out success against the number of traces
+07b42fd                                       k=1: 10/10   k=3: 10/10   k=5: 10/10   k=10: 10/10   k=all: 10/10
+302c169                                       k=1: 4/10   k=3: 10/10   k=5: 10/10   k=10: 10/10   k=all: 10/10
+ce359b5                                       k=1: 2/10   k=3: 10/10   k=5: 10/10   k=10: 10/10   k=all: 10/10
+302c169 at k=1, tests passed/total            59/80
+ce359b5 at k=1, tests passed/total            54/80
+
+== stability: the same traces, compiled again
+07b42fd  recompile 1 / 2                      10/10  10/10
+302c169  recompile 1 / 2                      10/10  10/10
+ce359b5  recompile 1 / 2                      10/10  10/10
+recompiles                                    6
+
+== graphs: node counts, and GENERATE nodes in the coverage compiles
+07b42fd  nodes, main / recompile 1 / 2        20 / 15 / 19
+302c169  nodes, main / recompile 1 / 2        16 / 18 / 16
+ce359b5  nodes, main / recompile 1 / 2        13 / 15 / 13
+07b42fd k=5 GENERATE                          extract_minimum_followers  10/10
+302c169 k=5 GENERATE                          parse_request  10/10
+302c169 k=10 GENERATE                         extract_offset  10/10
+ce359b5 k=3 GENERATE                          parse_cutoff_year  10/10
+ce359b5 k=10 GENERATE                         extract_cutoff_year  10/10
+coverage packages with a GENERATE node        5
+held-out runs of those packages               50
+successes in those runs                       50
+Songs k=3 package                             14 nodes: 12 EXECUTE, 1 DECIDE, 1 GENERATE
+
+== what the experiment cost (as paid)
+compiles, $ / count                           1.605 / 30
+traces, $                                     0.138
+agent on the held-out set, $                  0.079
+all-generate + IR + chat, $                   0.246
+IR on the held-out set, $                     0.0006
+coverage + stability runs, $                  0.0134
+total, $                                      2.08
+
+== numbers derived, not recorded
+95% one-sided bound on success given 10/10    0.74
+95% one-sided bound on success given 30/30    0.90
+one main compile, $ min / median / max        0.008 / 0.059 / 0.074
+prices read on                                2026-10-21
+price fingerprint                             2286758d79f3

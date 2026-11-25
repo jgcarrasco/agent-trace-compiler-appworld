@@ -1,0 +1,8 @@
+{
+  "email": {
+    "id": "email_123",
+    "sender": "marta@example.com",
+    "body": "Are you available on Tuesday at 15:00?"
+  },
+  "instruction": "Draft a friendly reply confirming the time and saying I will bring the project notes."
+}
